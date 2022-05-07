@@ -1,0 +1,170 @@
+body {
+  background-color: $very-dark-blue;
+}
+.container {
+  width: 88%;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.2rem;
+}
+.menu-card {
+  background-color: $dark-blue;
+  border-radius: 1.6rem;
+  width: 100%;
+  .card-report {
+    background-color: $blue;
+    border-radius: 1.6rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.8rem;
+    img {
+      max-width: 130px;
+      width: 26%;
+      border: 3px solid white;
+      border-radius: 50%;
+    }
+    .report {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      &:hover {
+        cursor: default;
+      }
+
+      p {
+        color: $pale-blue;
+        font-size: 1.5rem;
+      }
+      .name {
+        color: white;
+        font-size: 2.4rem;
+        font-weight: 300;
+      }
+    }
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.6rem;
+
+    .menu-link {
+      color: $desaturated-blue;
+      font-size: 1.8rem;
+      cursor: pointer;
+      &:hover {
+        color: white;
+      }
+    }
+    .menu-active {
+      color: white;
+    }
+  }
+}
+.regular-card {
+  width: 100%;
+  border-radius: 1.6rem;
+  background-repeat: no-repeat;
+  background-position: 92% -1rem;
+
+  .property-card {
+    background-color: $dark-blue;
+    margin-top: 4rem;
+    border-radius: 1.6rem;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    &:hover {
+      background-color: $card-hover;
+    }
+
+    .row {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .title {
+        color: white;
+        font-size: 1.8rem;
+        font-weight: 500;
+        &:hover {
+          cursor: default;
+        }
+      }
+      .points {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+          cursor: pointer;
+          .point {
+            background-color: white;
+          }
+        }
+        .point {
+          background-color: $pale-blue;
+          width: 0.4rem;
+          height: 0.4rem;
+          border-radius: 50%;
+          margin: 0.2rem;
+        }
+      }
+    }
+    .row-2 {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .hours {
+        color: white;
+        font-size: 3rem;
+        font-weight: 300;
+        &:hover {
+          cursor: default;
+        }
+      }
+      .description {
+        color: $pale-blue;
+        font-size: 1.5rem;
+        &:hover {
+          cursor: default;
+        }
+      }
+    }
+  }
+}
+.work {
+  background-color: $work;
+  background-image: url(../images/icon-work.svg);
+}
+.play {
+  background-color: $play;
+  background-image: url(../images/icon-play.svg);
+}
+.study {
+  background-color: $study;
+  background-image: url(../images/icon-study.svg);
+}
+.exercise {
+  background-color: $exercise;
+  background-image: url(../images/icon-exercise.svg);
+}
+.social {
+  background-color: $social;
+  background-image: url(../images/icon-social.svg);
+}
+.selfcare {
+  background-color: $selfcare;
+  background-image: url(../images/icon-self-care.svg);
+}
