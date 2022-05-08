@@ -47,7 +47,7 @@ function updateCard(card, timeframe) {
   const timeframeMsg = {
     daily: "Yesterday",
     weekly: "Last Week",
-    Monthly: "Last Month",
+    monthly: "Last Month",
   };
   const title = card.querySelector(".title").innerText;
   const current = data[title][timeframe]["current"];
@@ -67,7 +67,7 @@ function createRegularCard(element, timeframe) {
   const timeframeMsg = {
     daily: "Yesterday",
     weekly: "Last Week",
-    Monthly: "Last Month",
+    monthly: "Last Month",
   };
 
   return `<div class="regular-card ${title.toLowerCase().replace(/\s/g, "")}">
